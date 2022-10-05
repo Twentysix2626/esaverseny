@@ -3,8 +3,8 @@
 #include <BH1750.h> // Fenyszenzor
 
 // Szonar
-#define echoPin 1
-#define trigPin 0
+#define echoPin 7
+#define trigPin 6
 
 // Fenyszenzor
 BH1750 lightMeter;
@@ -59,7 +59,9 @@ void loop() {
   Serial.print(lux);
   Serial.println(" lx");
   Serial.print("Distance: ");
-  Serial.print(distance);
+  if (distance < 451) {
+    Serial.print(distance);
+  }
   Serial.println(" cm");
   // LCD
   lcd.setCursor(0, 0);
@@ -67,7 +69,11 @@ void loop() {
   lcd.print(".");
   lcd.print(lux % 100);
   lcd.setCursor(0, 1);
-  lcd.print(distance);
+  if (distance > 450) {
+    lcd.print("INVALID");
+  }else {
+    lcd.print(distance);
+  }
   lcd.print("cm");
-  delay(1000);
+  delay(200);
 }
