@@ -73,7 +73,8 @@ void loop() {
     lcd.print("INVALID");
   }else {
     lcd.print(distance);
+    lcd.print("cm");
   }
-  lcd.print("cm");
+ 
   delay(200);
 }
