@@ -1,0 +1,3 @@
+Kovacs
+
+Regi projekt LCD, Sonar es BH1750-el
