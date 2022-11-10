@@ -1,0 +1,19 @@
+Kovacs
+
+SDCard Reader: 
+  GND - GND
+  VCC - 5v
+  Miso - Digital 12
+  Mosi - Digital 11
+  SCK - Digital 13
+  CS - Digital 4
+  
+MQ-135:
+  GND - GND
+  VCC - 5v
+  AO - A0
+
+MQ-7:
+  GND - GND
+  VCC - 5v
+  AO - A1
