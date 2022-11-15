@@ -129,8 +129,9 @@ void loop() {
   adatFile.print(LPG); adatFile.print("  ");
   adatFile.print(CH4); adatFile.print("  ");
   adatFile.print(CO_2); adatFile.print("  ");
-  adatFile.println(Alcohol_2);;
-  Serial.println("Sikeres meres!");
+  adatFile.println(Alcohol_2);
+  Serial.println("Sikeres meres! Szenzorok ellenorzese: Olvasd le a szenzorok allapotat es 30s utan nezd meg valtoztak-e, ha nem akkor lehet, hogy hibas a szenzor kotes, de azert varjal 2 percet meg, mert lehet, hogy az adat tenylegesen nem kellett valtozzon.");
+  Serial.print("1. Szenzor Alkohol: "); Serial.print(Alcohol); Serial.print("2. Szenzor Alkohol: "); Serial.println(Alcohol_2);
   
   adatFile.close();
   delay(30000);

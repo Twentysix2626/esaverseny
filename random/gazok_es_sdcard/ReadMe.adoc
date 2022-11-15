@@ -1,5 +1,10 @@
 Kovacs
 
+Libraries:
+  https://www.arduino.cc/reference/en/libraries/sd/
+  https://github.com/adafruit/Adafruit_BusIO
+  https://github.com/adafruit/Adafruit_Sensor
+
 SDCard Reader: 
   GND - GND
   VCC - 5v
