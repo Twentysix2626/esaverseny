@@ -130,7 +130,8 @@ void loop() {
   adatFile.print(CH4); adatFile.print("  ");
   adatFile.print(CO_2); adatFile.print("  ");
   adatFile.println(Alcohol_2);;
-
+  Serial.println("Sikeres meres!");
+  
   adatFile.close();
   delay(30000);
 }
